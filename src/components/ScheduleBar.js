@@ -4,20 +4,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
-import HelpIcon from '@material-ui/icons/Help';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
-import ThumbDown from '@material-ui/icons/ThumbDown';
-import ThumbUp from '@material-ui/icons/ThumbUp';
 import Typography from '@material-ui/core/Typography';
-import Sunday from './Sunday'
-import Monday from './Monday'
-import Tuesday from './Tuesday'
-import Wednesday from './Wednesday'
-import Thursday from './Thursday'
-import Friday from './Friday'
+import Sunday from './days/Sunday'
+import Monday from './days/Monday'
+import Tuesday from './days/Tuesday'
+import Wednesday from './days/Wednesday'
+import Thursday from './days/Thursday'
+import Friday from './days/Friday'
+
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -38,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function ScrollableTabsButtonPrevent() {
+export default function ScheduleBar() {
   var d = new Date();
   var n = d.getDay();
   const classes = useStyles();
@@ -50,8 +44,16 @@ export default function ScrollableTabsButtonPrevent() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} variant="scrollable" scrollButtons="off">
+      <AppBar position="static" color="default">
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          indicatorColor="primary"
+          textColor="primary"
+          variant="scrollable"
+          scrollButtons="auto"
+        >
+
         <Tab label="Sun" />
         <Tab label="Mon" />
         <Tab label="Tue" />
@@ -67,7 +69,7 @@ export default function ScrollableTabsButtonPrevent() {
       {value === 3 && <TabContainer><Wednesday /></TabContainer>}
       {value === 4 && <TabContainer><Thursday /></TabContainer>}
       {value === 5 && <TabContainer><Friday /></TabContainer>}
-      {value === 6 && <TabContainer><Typography variant="p"> Yoga go have some fun</Typography></TabContainer>}
+      {value === 6 && <TabContainer>No Yoga go have some fun</TabContainer>}
     </div>
   );
 }
