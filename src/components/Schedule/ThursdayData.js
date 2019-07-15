@@ -1,16 +1,19 @@
-const ThursdayData [
+const ThursdayData = [
 
   {
     id: 1,
-    location: 'PY Killingsworth',
+    location: 'Peoples Yoga 3016 NE Killingsworth Street',
     time: '5:30-6:45pm',
-    type: 'Hatha Flow'
+    type: 'Hatha Flow',
+    directions: "https://goo.gl/maps/mxdynB4J9xVoW5BK8"
     },
     {
       id: 2,
-      location: 'PY Killingsworth',
+      location: 'Peoples Yoga 3016 NE Killingsworth Street',
       time: '7:15-8:30pm',
-      type: 'Restorative'
+      type: 'Restorative',
+      directions: "https://goo.gl/maps/mxdynB4J9xVoW5BK8"
+
       }
 ]
 

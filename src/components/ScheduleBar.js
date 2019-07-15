@@ -5,12 +5,17 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import Sunday from './days/Sunday'
-import Monday from './days/Monday'
-import Tuesday from './days/Tuesday'
-import Wednesday from './days/Wednesday'
-import Thursday from './days/Thursday'
-import Friday from './days/Friday'
+import SundayData from './Schedule/SundayData'
+import MondayData from './Schedule/MondayData'
+import TuesdayData from './Schedule/TuesdayData'
+import WednesdayData from './Schedule/WednesdayData'
+import ThursdayData from './Schedule/ThursdayData'
+import FridayData from './Schedule/FridayData'
+import ScheduleCard from './ScheduleCard'
+import Grid from '@material-ui/core/Grid';
+
+
+
 
 function TabContainer(props) {
   return (
@@ -29,18 +34,30 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     width: '100%',
     backgroundColor: theme.palette.background.paper,
-  },
+  }
 }));
+
+const _Sunday = SundayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} /> )
+const _Monday = MondayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} /> )
+const _Tuesday = TuesdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} /> )
+const _Wednesday = WednesdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} /> )
+const _Thursday = ThursdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} /> )
+const _Friday = FridayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} /> )
+
+
 
 export default function ScheduleBar() {
   var d = new Date();
   var n = d.getDay();
   const classes = useStyles();
-  const [value, setValue] = React.useState(n);
+  const [value, setValue] = React.useState(0);
 
   function handleChange(event, newValue) {
     setValue(newValue);
   }
+
+
+
 
   return (
     <div className={classes.root}>
@@ -63,12 +80,48 @@ export default function ScheduleBar() {
         <Tab label="Sat" />
         </Tabs>
       </AppBar>
-      {value === 0 && <TabContainer><Sunday /></TabContainer>}
-      {value === 1 && <TabContainer><Monday /></TabContainer>}
-      {value === 2 && <TabContainer><Tuesday /></TabContainer>}
-      {value === 3 && <TabContainer><Wednesday /></TabContainer>}
-      {value === 4 && <TabContainer><Thursday /></TabContainer>}
-      {value === 5 && <TabContainer><Friday /></TabContainer>}
+      {value === 0 && <TabContainer>
+                        <div className={classes.root}>
+                          <Grid container spacing={0}>
+                            {_Sunday }
+                          </Grid>
+                        </div>
+                      </TabContainer>}
+      {value === 1 && <TabContainer>
+                        <div className={classes.root}>
+                          <Grid container spacing={0}>
+                            {_Monday }
+                          </Grid>
+                        </div>
+                      </TabContainer>}
+      {value === 2 && <TabContainer>
+                        <div className={classes.root}>
+                          <Grid container spacing={0}>
+                            {_Tuesday }
+                          </Grid>
+                        </div>
+                      </TabContainer>}
+      {value === 3 && <TabContainer>
+                        <div className={classes.root}>
+                          <Grid container spacing={0}>
+                            {_Wednesday }
+                          </Grid>
+                        </div>
+                      </TabContainer>}
+      {value === 4 && <TabContainer>
+                        <div className={classes.root}>
+                          <Grid container spacing={0}>
+                            {_Thursday }
+                          </Grid>
+                        </div>
+                      </TabContainer>}
+      {value === 5 && <TabContainer>
+                        <div className={classes.root}>
+                          <Grid container spacing={0}>
+                            {_Friday }
+                          </Grid>
+                        </div>
+                      </TabContainer>}
       {value === 6 && <TabContainer>No Yoga go have some fun</TabContainer>}
     </div>
   );
