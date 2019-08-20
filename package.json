@@ -7,9 +7,13 @@
     "@material-ui/icons": "^4.2.1",
     "@material/typography": "^3.0.0",
     "google-map-react": "^1.1.4",
+    "instafeed.js": "^1.4.1",
     "material-ui-icons": "^1.0.0-beta.36",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
+    "react-animated-slider": "^1.1.4",
     "react-dom": "^16.8.6",
+    "react-instafeed": "^1.0.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },

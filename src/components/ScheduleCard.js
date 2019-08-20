@@ -8,6 +8,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Om from "../images/om.png"
+import Bhakti from '../images/Bhakti.jpg'
+import Py from '../images/peoplesYoga.jpg'
+import Np from '../images/npyoga.png'
+
 
 const useStyles = makeStyles({
   card: {
@@ -18,14 +22,28 @@ const useStyles = makeStyles({
   },
 });
 
+
 export default function ScheduleCard(props) {
   const classes = useStyles();
+  function getPic(id){
+      if(id === 1){
+          return Bhakti;
+      }
+      else if(id === 2){
+          return Py;
+      }
+      else if(id=== 3){
+      return Np;
+}
+
+  }
+
   return (
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Om}
+          image={getPic(props.pic)}
           title={props._type}
         />
         <CardContent>

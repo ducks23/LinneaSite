@@ -8,6 +8,31 @@ const OnlineData = [
   _ul: "https://onlineclasses.thebhaktishop.com/courses/yoga-2-3-with-linnea"
 
 }
+  ,
+{
+  id: 2,
+  _title: "Yoga 2",
+  _about: "Strong, flexible hamstrings, accessed from every angle, and available to anyone!",
+  _tools: "strap, blanket, 2 blocks",
+  _ul: "https://onlineclasses.thebhaktishop.com/courses/yoga-2-3-with-linnea-1"
+
+},
+{
+  id: 3,
+  _title: "Yoga 1/2",
+  _about: "Shoulder and neck work focusing on strengthening the outer armpits to prepare for side plank.",
+  _tools: "minimal",
+  _ul: "https://onlineclasses.thebhaktishop.com/courses/yoga-1-2-with-linnea"
+
+},
+{
+  id: 4,
+  _title: "Yoga 2",
+  _about: "Shoulder stability and strength work for side plank pose",
+  _tools: "minimal",
+  _ul: "https://onlineclasses.thebhaktishop.com/courses/yoga-2-with-linnea"
+
+}
 ]
 
 export default OnlineData

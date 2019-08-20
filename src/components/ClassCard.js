@@ -7,7 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Om from "../images/om.png"
 import {Link} from 'react-router-dom'
 import Grid from '@material-ui/core/Grid';
 
@@ -24,12 +23,11 @@ const useStyles = makeStyles({
 export default function MediaCard(props) {
   const classes = useStyles();
   return (
-    <Grid item xs={3}>
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Om}
+          image={props.pic}
           title={props._type}
         />
         <CardContent>
@@ -50,6 +48,5 @@ export default function MediaCard(props) {
         </Button>
       </CardActions>
     </Card>
-  </Grid>
   );
 }

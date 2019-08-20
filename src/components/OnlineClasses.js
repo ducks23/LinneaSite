@@ -1,17 +1,41 @@
 import React from "react"
-
 import OnlineCard from "./OnlineCard"
 import OnlineData from "./OnlineData"
+import Typography from '@material-ui/core/Typography'
+
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box'
+
+
+const useStyles = makeStyles({
+  root: {
+    height: '100vh',
+  
+    maxWidth: 800,
+    flexGrow: 1,
+    justify : 'center'
+  },
+});
 
 
 function OnlineClasses(){
 
 const OnlineComponents = OnlineData.map(card => <OnlineCard id _title = {card._title} _about = {card._about} _tools = {card._tools} _ul={card._ul} /> )
 console.log(OnlineComponents)
+    const classes = useStyles();
+
     return(
-        <div>
-            {OnlineComponents}
+      <Grid container spacing={0} justify = "center">
+        <div className={classes.root}>
+          <Typography component="div" variant="body1">
+              <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
+                  {OnlineComponents}
+
+              </Box>
+          </Typography>
         </div>
+      </Grid>
 
     )
 

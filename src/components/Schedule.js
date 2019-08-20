@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   root: {
     width: '100%',
     maxWidth: 800,
+    maxheight: '100vh'
 
   },
 });

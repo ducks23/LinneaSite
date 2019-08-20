@@ -2,11 +2,14 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+
+
 const useStyles = makeStyles({
   root: {
     width: '100%',
     maxWidth: 500,
-
+    height: '70vh',
+    padding: 50
   },
 });
 

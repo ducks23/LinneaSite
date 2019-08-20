@@ -6,6 +6,8 @@ const useStyles = makeStyles({
   root: {
     width: '100%',
     maxWidth: 500,
+    height: '50vh',
+    padding: 50,
 
   },
 });

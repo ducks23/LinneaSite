@@ -1,11 +1,11 @@
 import React from 'react'
+import Insta from "../images/insta.jpg"
 
 function Footer() {
     return (
-      <footer>
-          <h3> this is my footer</h3>
-      </footer>
 
+          <a href="https://www.instagram.com/linneasolveig/?hl=en"><img src={Insta}   alt="link" height="50px" width="50px"></img></a>
+          //<Div> <p>"linnea linnea solveig Portland, Or with love"</p></Div>
     )
 }
 

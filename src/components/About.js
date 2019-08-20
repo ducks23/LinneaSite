@@ -7,6 +7,7 @@ import Om from "../images/om.png"
 const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(3, 2),
+    height: '90vh'
     },
 
 
@@ -15,8 +16,10 @@ const useStyles = makeStyles(theme => ({
 function About() {
     const classes = useStyles();
     return (
+    <div className={classes.root}>
+
       <Typography component="div" variant="body1">
-    
+
           <Typography variant="h5" component="h3">
             Hi I'm Linnea
           </Typography>
@@ -26,6 +29,7 @@ function About() {
              I love to teach Yoga in Portland, Oregon :)
           </Typography>
       </Typography>
+  </div>
   )
 }
 

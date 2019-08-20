@@ -6,9 +6,10 @@ import Schedule from "./components/Schedule"
 import PrivateClasses from "./components/PrivateClasses"
 import Bio from "./components/Bio"
 import logo from './logo.svg';
-import Card1 from './components/Card1'
 import './App.css';
 import OnlineClasses from './components/OnlineClasses'
+import footer from './components/Footer'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <About />
       <Schedule />
       <Bio />
-      <OnlineClasses />
+      <Testimonials />
       <PrivateClasses />
 
+      <Footer />
     </div>
   );
 }
