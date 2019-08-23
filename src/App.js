@@ -20,7 +20,6 @@ function App() {
       <NavBar />
       <About />
       <Bio />
-      <Bio2 />
       <Schedule />
       <Testimonials />
       <PrivateClasses />
