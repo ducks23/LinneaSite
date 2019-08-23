@@ -2,14 +2,22 @@ import React from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import 'normalize.css/normalize.css';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
 import './tStyle.css';
 import './style.css';
+import Pic1 from '../images/pic1.jpeg'
+import Pic2 from '../images/pic2.jpeg'
+import Pic3 from '../images/pic3.jpeg'
+import Pic4 from '../images/pic4.jpeg'
+
 
 const content = [
 	{
 		title: 'My Experience',
 		description:"Linnea is an incredible yoga teacher and person. She is patient, thoughtful, genuine and inspiring. Her classes are well considered and seamlessly tie storytelling, body awareness, meditation, and exercise together. I have taken yoga classes for over 10 years but did not embrace or understand yoga as part of my daily life until taking classes with her. Linnea's attentiveness to body awareness, anatomy, and enthusiasm for learning has had a profound effect on me. I try to take classes with her every chance I get. Her positivity, understanding of movement and love of teaching make her a joy to work with and learn from.",
-		image: 'https://i.imgur.com/ZXBtVw7.jpg',
+		image: Pic1,
 		user: 'Emily Nachison',
 		userProfile: 'https://i.imgur.com/JSW6mEk.png'
 	},
@@ -17,7 +25,7 @@ const content = [
 		title: 'Consitent',
 		description:
 		'Despite taking many classes over the years, a consistent yoga practice eluded me until I took my first class with Linnea. The dedication, intention, and joy that she brings to her classes is the foundation for my daily practice. Linnea brings authenticity, a love of movement, and personal insight to her classes. Although I know she prepares extensively for her classes, they do not feel rote, repetitive, or that boxes are being ticked. It feels as though she is along with us, excited and curious, as we discover the next movement. And that excitement is infectious.',
-		image: 'https://i.imgur.com/DCdBXcq.jpg',
+		image: Pic2,
 		user: 'Michael Endo',
 		userProfile: 'https://i.imgur.com/0Clfnu7.png'
 	},
@@ -25,14 +33,29 @@ const content = [
 		title: 'Wonderful :)',
 		description:
 		'Linnea’s love for this practice is contagious, which makes it a delight to attend her classes. Her teaching style is a playfully choreographed dance of traditional and non-traditional postures assisted with a detailed anatomy lesson exploring our felt senses. I truly appreciate any class that prompts me to muse over my body’s cells, organs and/or muscles to better understand my internal systems. Linnea offers a holistic approach to moving, strengthening and perceiving the body that fills me with just the right balance of physical and cerebral education.',
-		image: 'https://i.imgur.com/DvmN8Hx.jpg',
+		image: Pic3,
 		user: 'Adrian E.',
 		userProfile: 'https://i.imgur.com/4KeKvtH.png'
 	}
 ];
 
-const Testimonials = () => (
-	<div>
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 800,
+    maxheight: '100vh',
+		justify: "center",
+		margin: "auto",
+
+  },
+});
+
+function Testimonials(){
+    const classes = useStyles();
+    return (
+
+	<div className={classes.root}>
+	<Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
+
 		<div className="wrapper">
 			<h1>Testimonials</h1>
 		</div>
@@ -46,10 +69,10 @@ const Testimonials = () => (
 					<div className="inner">
 						<h1>{item.title}</h1>
 						<p>{item.description}</p>
-					
+
 					</div>
 					<section>
-						<img src={item.userProfile} alt={item.user} />
+					
 						<span>
 							Posted by <strong>{item.user}</strong>
 						</span>
@@ -57,6 +80,8 @@ const Testimonials = () => (
 				</div>
 			))}
 		</Slider>
+		</Box>
 	</div>
 );
+}
 export default Testimonials

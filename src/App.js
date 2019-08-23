@@ -5,19 +5,23 @@ import About from "./components/About"
 import Schedule from "./components/Schedule"
 import PrivateClasses from "./components/PrivateClasses"
 import Bio from "./components/Bio"
+import Bio2 from "./components/Bio2"
 import logo from './logo.svg';
 import './App.css';
 import OnlineClasses from './components/OnlineClasses'
 import footer from './components/Footer'
 import Testimonials from './components/Testimonials'
 
+import Flower from './components/Flower'
 function App() {
+
   return (
     <div className="App">
       <NavBar />
       <About />
-      <Schedule />
       <Bio />
+      <Bio2 />
+      <Schedule />
       <Testimonials />
       <PrivateClasses />
 
