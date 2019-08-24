@@ -5,7 +5,6 @@ import About from "./components/About"
 import Schedule from "./components/Schedule"
 import PrivateClasses from "./components/PrivateClasses"
 import Bio from "./components/Bio"
-import Bio2 from "./components/Bio2"
 import logo from './logo.svg';
 import './App.css';
 import OnlineClasses from './components/OnlineClasses'

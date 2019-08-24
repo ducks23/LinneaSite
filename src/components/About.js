@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Down from "../images/down.png"
@@ -7,35 +7,29 @@ import Flower from "./Flower"
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box'
 
-
 const useStyles = makeStyles(theme => ({
   root: {
     padding: 20,
     height: '90vh'
-    },
-
-
+  }
 }));
 
 function About() {
-    const classes = useStyles();
-    return (
-    <Grid container justify = "center">
+  const classes = useStyles();
+  return (<Grid container="container" justify="center">
 
     <div className={classes.root}>
       <Typography component="div" variant="body1">
 
-          <Typography variant="h5" component="h3">Hi I'm Linnea</Typography>
-          <Flower />
-          <Typography component="p">I love to teach Yoga in Portland, Oregon :)</Typography>
+        <Typography variant="h5" component="h3">Hi I'm Linnea</Typography>
+        <Flower/>
+        <Typography component="p">I love to teach Yoga in Portland, Oregon :)</Typography>
       </Typography>
-          <img src={Down} alt="linneaPicture" height="200" width="300"></img>
+      <img src={Down} alt="linneaPicture" height="200" width="300"></img>
 
     </div>
 
-
-    </Grid>
-  )
+  </Grid>)
 }
 
 export default About

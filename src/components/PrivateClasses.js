@@ -2,6 +2,9 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+
+
+
 const useStyles = makeStyles({
   root: {
     width: '100%',
@@ -16,7 +19,9 @@ function PrivateClasses(){
     const classes = useStyles();
     return (
       <Grid container justify = "center">
-        <div className={classes.root}>
+        <div className = {
+  classes.root
+}>
             <Typography mx="auto" variant="h6" gutterBottom>
                 Private Lessons:
             </Typography>

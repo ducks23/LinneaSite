@@ -20,7 +20,7 @@ function Schedule(){
   const classes = useStyles();
   return (
     <Grid container justify = "center">
-      <div className={classes.root}>
+      <div className={classes.root} id="schedule">
         <Typography component="div" variant="body1">
             <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
               <h2>Schedule</h2>
