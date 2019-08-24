@@ -5,7 +5,7 @@ import 'normalize.css/normalize.css';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import {makeStyles} from '@material-ui/core/styles';
-import './tStyle.css';
+
 import './style.css';
 import Pic1 from '../images/pic1.jpeg'
 import Pic2 from '../images/pic2.jpeg'

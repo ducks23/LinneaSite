@@ -10,12 +10,16 @@ import './App.css';
 import OnlineClasses from './components/OnlineClasses'
 import footer from './components/Footer'
 import Testimonials from './components/Testimonials'
+import CssBaseline from '@material-ui/core/CssBaseline';
+
+
 
 import Flower from './components/Flower'
 function App() {
 
   return (
     <div className="App">
+      
       <NavBar />
       <About />
       <Bio />

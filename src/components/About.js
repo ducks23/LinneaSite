@@ -9,7 +9,7 @@ import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: 20,
+    padding: 0,
     height: '90vh'
   }
 }));
