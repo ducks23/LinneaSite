@@ -12,14 +12,26 @@ import footer from './components/Footer'
 import Testimonials from './components/Testimonials'
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-
+import { createMuiTheme } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue';
+import { ThemeProvider } from '@material-ui/styles';
+import { purple } from '@material-ui/core/colors';
 
 import Flower from './components/Flower'
+const theme = createMuiTheme({
+  palette: {
+    primary:{ main: '#dd79f7' },
+  },
+});
+
+
+
+
 function App() {
 
   return (
     <div className="App">
-
+    <ThemeProvider theme={theme}>
       <NavBar />
       <About />
       <Bio />
@@ -29,6 +41,7 @@ function App() {
       <PrivateClasses />
 
       <Footer />
+      </ThemeProvider>
     </div>
   );
 }
