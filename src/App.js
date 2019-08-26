@@ -19,11 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      
+
       <NavBar />
       <About />
       <Bio />
       <Schedule />
+      <OnlineClasses />
       <Testimonials />
       <PrivateClasses />
 

@@ -31,7 +31,7 @@ function Bio(){
       <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
           <Grid container alignItems="center" justify = "center" spacing={3}>
-              <Grid item sm={12} md={6}>
+              <Grid item  md={6}>
               <Paper className={classes.paper}>
                   <img src={Pic1} alt="linneaPicture" height="200" width="300"></img>
               </Paper>

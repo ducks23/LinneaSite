@@ -7,7 +7,11 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Om from "../images/om.png"
+import One from "../images/one.jpg"
+import Two from "../images/two.jpg"
+import Three from "../images/three.jpg"
+import Four from "../images/pic4.jpeg"
+
 import {Link} from 'react-router-dom'
 
 import Grid from '@material-ui/core/Grid';
@@ -22,16 +26,32 @@ const useStyles = makeStyles({
   },
 });
 
+function getPic2(id){
+    if(id === 1){
+        return One;
+    }
+    else if(id === 2){
+        return Two;
+    }
+    else if(id=== 3){
+    return Three;
+    }
+    else if(id=== 4){
+    return Four;
+}
+
+  }
+
 export default function MediaCard(props) {
   const classes = useStyles();
 
   return (
-  <Grid item xs={3}>
+  <Grid item xs={4}>
     <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Om}
+          image={getPic2(props.pic)}
           title={props._title}
         />
         <CardContent>
@@ -48,7 +68,7 @@ export default function MediaCard(props) {
       </CardActionArea>
       <CardActions>
         <Button href ={props._ul} size="small" color="primary">
-          Buy $3.00
+          View
         </Button>
       </CardActions>
     </Card>

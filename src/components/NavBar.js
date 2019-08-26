@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import TemporaryDrawer from './TemporaryDrawer'
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const useStyles = makeStyles(theme => ({
@@ -18,6 +19,12 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
   },
+  button: {
+     margin: theme.spacing(1),
+   },
+   input: {
+     display: 'none',
+   },
 }));
 
 export default function NavBar() {
@@ -27,17 +34,12 @@ export default function NavBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-        <Link
-        activeClass="active"
-        to="schedule"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration= {500}
-        >
-        <Button>Schedule
-        </Button>
-        </Link>
+
+        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <TemporaryDrawer />
+        </IconButton>
+
+
         </Toolbar>
       </AppBar>
     </div>
