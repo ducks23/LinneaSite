@@ -10,7 +10,7 @@ import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles({
   root: {
-    height: '90vh',
+    height: '100%',
     padding: 40,
     maxWidth: 800,
     flexGrow: 1,
