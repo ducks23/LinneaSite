@@ -1,5 +1,5 @@
 import React from 'react'
-import Insta from "../images/insta.jpg"
+import Insta from "../images/instagram-512.png"
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -30,7 +30,7 @@ function Footer() {
     <Grid container justify="center">
     <div className={classes.root}>
     <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
-        <h3>Follow me on Instagram </h3>
+        <h3>Follow me on Instagram! </h3>
           <a href="https://www.instagram.com/linneasolveig/?hl=en">
             <img src={Insta}   alt="link" height="50px" width="50px"></img>
           </a>
