@@ -28,15 +28,7 @@ const OnlineData = [
   pic: 3,
 
 },
-{
-  id: 4,
-  _title: "Yoga 2",
-  _about: "Shoulder stability and strength work for side plank pose",
-  _tools: "minimal",
-  _ul: "https://onlineclasses.thebhaktishop.com/courses/yoga-2-with-linnea",
-  pic: 4,
 
-}
 ]
 
 export default OnlineData

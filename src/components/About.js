@@ -9,8 +9,8 @@ import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: 0,
-    height: '90vh'
+    padding: 30,
+    height: '80vh'
   }
 }));
 
@@ -21,9 +21,9 @@ function About() {
     <div className={classes.root}>
       <Typography component="div" variant="body1">
 
-        <Typography variant="h5" component="h3">Hi I'm Linnea</Typography>
+        <Typography variant="h5" component="h3">Linnea Solveig Yoga</Typography>
         <Flower/>
-        <Typography component="p">I love to teach Yoga in Portland, Oregon :)</Typography>
+        <Typography component="p">I teach Yoga in Portland, Oregon </Typography>
       </Typography>
       <img src={Down} alt="linneaPicture" height="200" width="300"></img>
 

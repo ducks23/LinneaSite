@@ -36,7 +36,7 @@ export default function NavBar() {
         <Toolbar>
 
         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <TemporaryDrawer />
+          {/*  <TemporaryDrawer />*/}
         </IconButton>
 
 

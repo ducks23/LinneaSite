@@ -13,12 +13,12 @@ const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     width: '100%',
-    maxWidth: 900,
+    maxWidth: 800,
     padding: 50
   },
   paper: {
     padding:5,
-    width: 305
+    width: 350
 
 }
 });
@@ -33,7 +33,7 @@ function Bio(){
           <Grid container alignItems="center" justify = "center" spacing={3}>
               <Grid item  md={6}>
               <Paper className={classes.paper}>
-                  <img src={Pic1} alt="linneaPicture" height="200" width="300"></img>
+                  <img src={Pic1} alt="linneaPicture" height="250" width="350"></img>
               </Paper>
 
               </Grid>
