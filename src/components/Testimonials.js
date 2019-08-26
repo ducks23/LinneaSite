@@ -40,7 +40,7 @@ const useStyles = makeStyles({
     maxheight: '100vh',
     justify: "center",
     margin: "auto",
-    padding: 40
+    padding: 20
   }
 });
 
