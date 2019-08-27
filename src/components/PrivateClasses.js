@@ -3,6 +3,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
+import Box from '@material-ui/core/Box'
+
 
 
 const useStyles = makeStyles({
@@ -18,20 +20,20 @@ const useStyles = makeStyles({
 function PrivateClasses(){
     const classes = useStyles();
     return (
-      <Grid container justify = "center">
-        <div className = {
-  classes.root
-}>
-            <Typography mx="auto" variant="h6" gutterBottom>
-                Private Lessons:
-            </Typography>
-            <Typography variant="subtitle1" gutterBottom>I offer private and semi-private classes.
-                These classes are both enlightening and enormously fun! Whether you have specific injuries, mysterious discomforts, vague questions, or definitive goals, spending an hour or so, one on one, can help your practice grow and expand.
-                $75 per hour. $15 for each additional student. Maximum 4 students. Buy a package of four classes $280.
-              </Typography>
+      <Grid container justify="center">
+          <div className={classes.root}>
+              <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
-        </div>
-        </Grid>
+                  <Typography mx="auto" variant="h6" gutterBottom>
+                    Private Lessons:
+                  </Typography>
+                  <Typography variant="subtitle1" gutterBottom>I offer private and semi-private classes.
+                    These classes are both enlightening and enormously fun! Whether you have specific injuries, mysterious discomforts, vague questions, or definitive goals, spending an hour or so, one on one, can help your practice grow and expand.
+                    $75 per hour. $15 for each additional student. Maximum 4 students. Buy a package of four classes $280.
+                  </Typography>
+              </Box>
+          </div>
+      </Grid>
 
 )
 
