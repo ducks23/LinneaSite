@@ -25,8 +25,8 @@ function About() {
         <Flower/>
         <Typography component="p">I teach Yoga in Portland, Oregon </Typography>
       </Typography>
-      <img src={Down} alt="linneaPicture" height="200" width="300"></img>
-
+    {/*  <img src={Down} alt="linneaPicture" height="200" width="300"></img>
+*/}
     </div>
 
   </Grid>)
