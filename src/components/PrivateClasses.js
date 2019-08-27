@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   root: {
     width: '100%',
     maxWidth: 500,
-    height: '40vh',
+    height: '100%',
     padding: 50,
 
   },
