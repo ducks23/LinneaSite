@@ -12,6 +12,12 @@ import Two from "../images/two.jpg"
 import Three from "../images/three.jpg"
 import Four from "../images/pic4.jpeg"
 
+
+import Pic1 from '../images/pic1.jpeg'
+import Pic2 from '../images/pic2.jpeg'
+import Pic3 from '../images/pic3.jpeg'
+import Pic4 from '../images/pic4.jpeg'
+
 import {Link} from 'react-router-dom'
 
 import Grid from '@material-ui/core/Grid';
@@ -28,16 +34,16 @@ const useStyles = makeStyles({
 
 function getPic2(id){
     if(id === 1){
-        return One;
+        return Pic3;
     }
     else if(id === 2){
-        return Two;
+        return Pic2;
     }
     else if(id=== 3){
-    return Three;
+    return Pic4;
     }
     else if(id=== 4){
-    return Four;
+    return Pic3;
 }
 
   }
