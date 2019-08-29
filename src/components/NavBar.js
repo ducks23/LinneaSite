@@ -39,7 +39,7 @@ export default function NavBar() {
 
 
         <Typography variant="h6" className={classes.title}>
-            Linnea Solveig yoga
+            Linnea Solveig Yoga
         </Typography>
         </Toolbar>
       </AppBar>
