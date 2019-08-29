@@ -1,5 +1,6 @@
 import React from 'react'
 import ScheduleBar from './ScheduleBar'
+import ScheduleBar0 from './ScheduleBar0'
 import Typography from '@material-ui/core/Typography'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -24,7 +25,7 @@ function Schedule(){
         <Typography component="div" variant="body1">
             <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
               <h2>Schedule</h2>
-              <ScheduleBar />
+              <ScheduleBar0 />
             </Box>
         </Typography>
       </div>
