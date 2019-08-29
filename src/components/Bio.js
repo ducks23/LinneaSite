@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
   paper: {
     padding:5,
-    width: 350
+    width: 250
 
 }
 });
