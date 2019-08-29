@@ -18,6 +18,8 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
+    marginRight: 'auto',
+    marginLeft: 'auto',
   },
   button: {
      margin: theme.spacing(1),
@@ -35,11 +37,10 @@ export default function NavBar() {
       <AppBar position="static">
         <Toolbar>
 
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          {/*  <TemporaryDrawer />*/}
-        </IconButton>
 
-
+        <Typography variant="h6" className={classes.title}>
+Linnea Solveig yoga
+        </Typography>
         </Toolbar>
       </AppBar>
     </div>
