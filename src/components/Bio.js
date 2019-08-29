@@ -3,7 +3,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Pic1 from '../images/pic1.jpeg'
 
 import Box from '@material-ui/core/Box';
 
@@ -33,7 +32,7 @@ function Bio(){
           <Grid container alignItems="center" justify = "center" spacing={3}>
               <Grid item  md={6}>
               <Paper className={classes.paper}>
-                  <img src={Pic1} alt="linneaPicture" height="250" width="350"></img>
+                  <img src={Pic2} alt="linneaPicture" height="350" width="250"></img>
               </Paper>
 
               </Grid>

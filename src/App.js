@@ -20,7 +20,7 @@ import { purple } from '@material-ui/core/colors';
 import Flower from './components/Flower'
 const theme = createMuiTheme({
   palette: {
-    primary:{ main: '#967bb6' },
+    primary:{ main: '#F0F04A' },
   },
 });
 
