@@ -23,7 +23,7 @@ function About() {
       <Typography component="div" variant="body1">
 
         <Flower/>
-        <Typography component="h3">Yoga and Movement </Typography>
+        <h1>Yoga and Movement </h1>
       </Typography>
     {/*  <img src={Down} alt="linneaPicture" height="200" width="300"></img>
 */}
