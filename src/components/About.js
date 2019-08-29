@@ -23,7 +23,7 @@ function About() {
       <Typography component="div" variant="body1">
 
         <Flower/>
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h4" noWrap="true" gutterBottom>
                 Yoga and Movement
         </Typography>
 
