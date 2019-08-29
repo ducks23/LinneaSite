@@ -34,12 +34,12 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
 
 
         <Typography variant="h6" className={classes.title}>
-Linnea Solveig yoga
+            Linnea Solveig yoga
         </Typography>
         </Toolbar>
       </AppBar>
