@@ -11,7 +11,6 @@ import OnlineClasses from './components/OnlineClasses'
 import footer from './components/Footer'
 import Testimonials from './components/Testimonials'
 import CssBaseline from '@material-ui/core/CssBaseline';
-
 import { createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import { ThemeProvider } from '@material-ui/styles';
@@ -21,6 +20,7 @@ import Flower from './components/Flower'
 const theme = createMuiTheme({
   palette: {
     primary:{ main: '#F0F04A' },
+    secondary:{ main: '#F0C2E4' },
   },
 });
 
@@ -38,6 +38,7 @@ function App() {
       <Schedule />
       <OnlineClasses />
       <Testimonials />
+
       <PrivateClasses />
 
       <Footer />

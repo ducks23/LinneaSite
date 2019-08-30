@@ -12,6 +12,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-animated-slider": "^1.1.4",
+    "react-awesome-slider": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-instafeed": "^1.0.0",
     "react-router-dom": "^5.0.1",

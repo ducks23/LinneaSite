@@ -61,12 +61,12 @@ export default function ScheduleBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar position="static" color="secondary">
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
+          indicatorColor="secondary"
+          textColor="secondary"
           variant="scrollable"
           scrollButtons="auto"
         >

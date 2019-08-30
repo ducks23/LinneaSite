@@ -15,7 +15,7 @@ import Pic4 from '../images/pic4.jpeg'
 const content = [
   {
     title: 'My Experience',
-    description: "Linnea is an incredible yoga teacher and person. She is patient, thoughtful, genuine and inspiring. Her classes are well considered and seamlessly tie storytelling, body awareness, meditation, and exercise together. I have taken yoga classes for over 10 years but did not embrace or understand yoga as part of my daily life until taking classes with her. Linnea's attentiveness to body awareness, anatomy, and enthusiasm for learning has had a profound effect on me. I try to take classes with her every chance I get. Her positivity, understanding of movement and love of teaching make her a joy to work with and learn from.",
+    description: "Linnea is an incredible yoga teacher and person. She is patient, thoughtful, genuine and inspiring. Her classes are well considered and seamlessly tie storytelling, body awareness, meditation, and exercise together. I have taken yoga classes for over 10 years but did not embrace or understand yoga as part of my daily life until taking classes with her.  I try to take classes with her every chance I get. Her positivity, understanding of movement and love of teaching make her a joy to work with and learn from.",
     image: Pic1,
     user: 'Emily Nachison',
     userProfile: 'https://i.imgur.com/JSW6mEk.png'
