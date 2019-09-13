@@ -59,7 +59,7 @@ export default function ScheduleCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href ={props.directions} size="small" color="primary">
+        <Button href ={props.directions} size="small" color="secondary">
           Driections
         </Button>
       </CardActions>

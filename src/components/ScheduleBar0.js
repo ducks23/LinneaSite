@@ -13,6 +13,7 @@ import ThursdayData from './Schedule/ThursdayData'
 import FridayData from './Schedule/FridayData'
 import ScheduleCard from './ScheduleCard'
 import Grid from '@material-ui/core/Grid';
+import purple from '@material-ui/core/colors/purple';
 
 import Box from '@material-ui/core/Box';
 
@@ -80,13 +81,14 @@ export default function ScrollableTabsButtonAuto() {
   }
 
   return (
+
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar position="static" type= "dark" color="dark">
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
+          indicatorColor="secondary"
+          textColor="secondary"
           variant="scrollable"
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"

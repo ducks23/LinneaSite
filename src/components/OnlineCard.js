@@ -67,11 +67,11 @@ export default function MediaCard(props) {
           <p>
             {props._about}
           </p>
-          
+
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button href ={props._ul} size="small" color="primary">
+        <Button href ={props._ul} size="small" color="secondary">
           View
         </Button>
       </CardActions>

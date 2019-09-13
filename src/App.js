@@ -19,8 +19,18 @@ import { purple } from '@material-ui/core/colors';
 import Flower from './components/Flower'
 const theme = createMuiTheme({
   palette: {
-    primary:{ main: '#F0F04A' },
-    secondary:{ main: '#F0C2E4' },
+    secondary: {
+     light: '#ffeeff',
+     main: '#f8bbd0',
+     dark: '#c48b9f',
+     contrastText: '#000000',
+   },
+   primary: {
+     light: '#ffff8b',
+     main: '#ffee58',
+     dark: '#c9bc1f',
+     contrastText: '#00000',
+   },
   },
 });
 
