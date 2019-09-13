@@ -42,7 +42,7 @@ function App() {
       <PrivateClasses />
 
       <Footer />
-      </ThemeProvider>
+    </ThemeProvider>
     </div>
   );
 }
