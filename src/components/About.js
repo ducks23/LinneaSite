@@ -17,22 +17,19 @@ const useStyles = makeStyles(theme => ({
 
 function About() {
   const classes = useStyles();
-  return (<Grid container="container" justify="center">
+  return (
+    <Grid container="container" justify="center">
 
     <div className={classes.root}>
-      <Typography component="div" variant="body1">
 
         <Flower/>
-        <Typography variant="h4" noWrap="true" gutterBottom>
-                Yoga and Movement
-        </Typography>
-
-      </Typography>
-    {/*  <img src={Down} alt="linneaPicture" height="200" width="300"></img>
-*/}
+        <h2> Yoga and Movement </h2>
+      
     </div>
 
-  </Grid>)
+  </Grid>
+)
+
 }
 
 export default About

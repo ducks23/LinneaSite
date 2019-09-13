@@ -40,9 +40,9 @@ export default function NavBar() {
       <AppBar position="fixed">
         <Toolbar>
 
-        <Typography variant="h1" className={classes.title}>
+        <h1 className={classes.title}>
               Linnea Solveig
-        </Typography>
+        </h1>
         </Toolbar>
       </AppBar>
     </div>

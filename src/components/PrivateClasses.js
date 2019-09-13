@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     width: '100%',
     maxWidth: 500,
     height: '100%',
-    padding: 50,
+    padding: 10,
 
   },
 });
@@ -24,13 +24,13 @@ function PrivateClasses(){
           <div className={classes.root}>
               <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
-                  <Typography mx="auto" variant="h6" gutterBottom>
+                  <h2>
                     Private Lessons:
-                  </Typography>
-                  <Typography variant="subtitle1" gutterBottom>I offer private and semi-private classes.
+                  </h2>
+                  <p>I offer private and semi-private classes.
                     These classes are both enlightening and enormously fun! Whether you have specific injuries, mysterious discomforts, vague questions, or definitive goals, spending an hour or so, one on one, can help your practice grow and expand.
                     $75 per hour. $15 for each additional student. Maximum 4 students. Buy a package of four classes $280.
-                  </Typography>
+                  </p>
               </Box>
           </div>
       </Grid>

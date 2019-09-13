@@ -47,15 +47,15 @@ export default function ScheduleCard(props) {
           title={props._type}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <h2>
             {props.type}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          </h2>
+          <h3>
             {props.time}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          </h3>
+          <p>
             {props.location}
-          </Typography>
+          </p>
         </CardContent>
       </CardActionArea>
       <CardActions>

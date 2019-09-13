@@ -28,14 +28,12 @@ console.log(OnlineComponents)
     return(
       <Grid container spacing={2} justify = "center">
         <div className={classes.root}>
-          <Typography component="div" variant="body1">
               <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
-                  <h3>Online Classes</h3>
+                  <h2>Online Classes</h2>
                   <Grid container spacing={0}>
                       {OnlineComponents}
                   </Grid>
               </Box>
-          </Typography>
         </div>
       </Grid>
 
