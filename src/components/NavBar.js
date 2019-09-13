@@ -12,7 +12,9 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    height: '25 px'
   },
+//make the h1 text size smaller
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -20,6 +22,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     marginRight: 'auto',
     marginLeft: 'auto',
+    fontSize: 25
   },
   button: {
      margin: theme.spacing(1),
@@ -37,9 +40,8 @@ export default function NavBar() {
       <AppBar position="fixed">
         <Toolbar>
 
-
-        <Typography variant="h6" className={classes.title}>
-            Linnea Solveig
+        <Typography variant="h1" className={classes.title}>
+              Linnea Solveig
         </Typography>
         </Toolbar>
       </AppBar>
