@@ -28,9 +28,10 @@ function Footer() {
   const classes = useStyles();
   return (
     <Grid container justify="center">
-    <div className={classes.root}>
+    <div id="contact" className={classes.root}>
     <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
         <h3>Follow me on Instagram! </h3>
+        
           <a href="https://www.instagram.com/linneasolveig/?hl=en">
             <img src={Insta}   alt="linneas instagram" height="50px" width="50px"></img>
           </a>

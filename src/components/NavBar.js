@@ -9,6 +9,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import TemporaryDrawer from './TemporaryDrawer'
 import { Link, animateScroll as scroll } from "react-scroll";
 
+
+import "./style.css"
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -36,15 +39,78 @@ export default function NavBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="fixed">
-        <Toolbar>
 
-        <h1 className={classes.title}>
-              Linnea Solveig
-        </h1>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+          <a href="/" class="navbar-brand">Linnea Solveig</a>
+          <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar9">
+              <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">
+                  <Link
+                      activeClass="active"
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration= {500}
+                  > About </Link></a>
+              </li>
+
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><Link
+                          activeClass="active"
+                          to="schedule"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration= {500}
+                      > Schedule </Link></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <Link
+                            activeClass="active"
+                            to="online"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration= {500}
+                        > Online Classes </Link></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration= {500}
+                        > Contact </Link>
+                  </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  /*
+          <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration= {500}
+          > Contact </Link>
+        </li>
+      </ul>
+*/
+
+
   );
 }

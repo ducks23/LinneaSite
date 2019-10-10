@@ -6,28 +6,38 @@ import Down from "../images/down.png"
 import Flower from "./Flower"
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box'
-
+import Carousel from "./Carousel"
+import Pic1 from '../images/pic1.jpeg'
+import Pic2 from '../images/pic2.jpeg'
+import Pic3 from '../images/pic3.jpeg'
+import Pic4 from '../images/pic4.jpeg'
+import "./style.css"
 const useStyles = makeStyles(theme => ({
   root: {
     paddingTop: 80,
+    height: '90vh',
+  },
+  h2: {
     padding: 40,
-    height: '80vh'
-  }
+
+  },
+  box:{
+    height: '60vh',
+    maxWidth: '60vh',
+
+
+}
 }));
 
 function About() {
+
   const classes = useStyles();
   return (
-    <Grid container="container" justify="center">
-
     <div className={classes.root}>
-
-        <Flower/>
-        <h2> Yoga and Movement </h2>
-      
+      <div class="container-fluid">
+        <Carousel />
+      </div>
     </div>
-
-  </Grid>
 )
 
 }

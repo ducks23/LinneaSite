@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from "./components/Footer"
 import NavBar from "./components/NavBar"
 import About from "./components/About"
+import Carousel from "./components/Carousel"
 import Schedule from "./components/Schedule"
 import PrivateClasses from "./components/PrivateClasses"
 import Bio from "./components/Bio"
