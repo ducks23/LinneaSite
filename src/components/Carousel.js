@@ -21,37 +21,7 @@ function Carousel(){
     const classes = useStyles();
     return (
     <div className={classes.root}>
-    
-      <div id="demo" className="carousel slide" data-ride="carousel">
-       {/* Indicators */}
-       <ul className="carousel-indicators">
-         <li data-target="#demo" data-slide-to={0} className="active" />
-         <li data-target="#demo" data-slide-to={1} />
-         <li data-target="#demo" data-slide-to={2} />
-       </ul>
-       {/* The slideshow */}
-       <div className="carousel-inner">
-         <div className="carousel-item active">
-           <img src={Pic1} alt="Los Angeles" width="600" height="300" />
-           <div class="carousel-caption">
-               <h3>Yoga and Movement</h3>
-             </div>
-         </div>
-         <div className="carousel-item">
-           <img src={Pic2} alt="Chicago" width="600" height="300" />
-         </div>
-         <div className="carousel-item">
-           <img src={Pic3} alt="New York" width="600" height="300" />
-         </div>
-       </div>
-       {/* Left and right controls */}
-       <a className="carousel-control-prev" href="#demo" data-slide="prev">
-         <span className="carousel-control-prev-icon" />
-       </a>
-       <a className="carousel-control-next" href="#demo" data-slide="next">
-         <span className="carousel-control-next-icon" />
-       </a>
-     </div>
+
    </div>
   )};
 

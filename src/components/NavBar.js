@@ -40,7 +40,7 @@ export default function NavBar() {
 
   return (
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
           <a href="/" class="navbar-brand">Linnea Solveig</a>
           <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">

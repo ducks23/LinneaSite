@@ -7,23 +7,9 @@ background-color: #f8bbd0 !important
   background-color: #ffee58 !important
 
 }
-
-.carousel-inner img {
-     max-height: 400px !important;
-     max-width: 600px !important;
-     width: 70%!important;
-     height: 60% !important;
- }
-
- .carousel-control-prev {
-      width: 50%!important;
-      height: 50% !important;
-  }
-
-  .carousel-control-next {
-       width: 50%!important;
-       height: 50% !important;
-   }
-.carousel-indicators {
-      height: 30% !important;
-  }
+.responsive {
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+  padding-top: 50;
+}
