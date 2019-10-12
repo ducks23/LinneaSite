@@ -17,7 +17,6 @@ import blue from '@material-ui/core/colors/blue';
 import { ThemeProvider } from '@material-ui/styles';
 import { purple } from '@material-ui/core/colors';
 
-import Flower from './components/Flower'
 const theme = createMuiTheme({
   palette: {
     secondary: {

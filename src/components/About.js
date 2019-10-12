@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Down from "../images/down.png"
-import Flower from "./Flower"
+
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box'
 import Carousel from "./Carousel"
@@ -21,11 +21,11 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 550,
   },
   h2: {
-    padding: 30,
+    paddingTop: 20
 
   },
   p:{
-    padding:40,
+    padding:30,
 }
 
 }));
@@ -40,11 +40,10 @@ function About() {
 
         <Grid container alignItems="center" justify = "center" spacing={3}>
 
-  <div classname={classes.p}>
+      <div classname={classes.p}>
           <img src={Pic1} className={classes.h2} paddingTop='50px' alt="linnea in sweater" class="responsive"  />
-          <h2 className={classes.h2}> Yoga and Movement </h2>
-
-</div>
+          <h2 className={classes.h2} > Yoga and Movement </h2>
+      </div>
           </Grid>
       </Box>
       </div>
