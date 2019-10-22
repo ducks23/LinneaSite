@@ -42,7 +42,16 @@ export default function NavBar() {
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
-          <a href="/" class="navbar-brand">Linnea Solveig</a>
+    <a class="navbar-brand" href="#" style={{ color: '#000' }}>
+            <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500}
+            > Linnea Solveig </Link>
+      </a>
           <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
               <span class="navbar-toggler-icon"></span>
           </button>

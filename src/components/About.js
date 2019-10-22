@@ -35,7 +35,7 @@ function About() {
   const classes = useStyles();
   return (
     <Grid container justify="center">
-    <div  className={classes.root}>
+    <div id="home" className={classes.root}>
     <Box borderRadius={16} bgcolor="primary.main" className={classes.p} color="primary.contrastText" p={2} m={1}>
 
         <Grid container alignItems="center" justify = "center" spacing={3}>
