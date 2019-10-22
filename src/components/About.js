@@ -35,14 +35,14 @@ function About() {
   const classes = useStyles();
   return (
     <Grid container justify="center">
-    <div id="about" className={classes.root}>
+    <div  className={classes.root}>
     <Box borderRadius={16} bgcolor="primary.main" className={classes.p} color="primary.contrastText" p={2} m={1}>
 
         <Grid container alignItems="center" justify = "center" spacing={3}>
 
       <div classname={classes.p}>
           <img src={Pic1}  className={classes.h2} paddingTop='50px' alt="linnea in sweater" class="responsive"  />
-          <h2 className={classes.h2} > Yoga and Movement </h2>
+          <h2 className={classes.h2} > Yoga & Movement </h2>
       </div>
           </Grid>
       </Box>
