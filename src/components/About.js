@@ -16,7 +16,7 @@ import './style.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
-    paddingTop: 80,
+    padding: 40,
     height: '100%',
     maxWidth: 550,
   },
