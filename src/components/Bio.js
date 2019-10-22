@@ -30,7 +30,7 @@ function Bio(){
     return (
       <Grid container justify="center">
       <div id="about" className={classes.root}>
-      <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
+      <Box borderRadius={16} bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
           <Grid container alignItems="center" justify = "center" spacing={3}>
 

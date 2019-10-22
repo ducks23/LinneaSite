@@ -47,7 +47,7 @@ const useStyles = makeStyles({
 function Testimonials() {
   const classes = useStyles();
   return (<div className={classes.root}>
-    <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
+    <Box borderRadius={16} bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
         <h1>Testimonials</h1>
         <p>"Linnea is an incredible yoga teacher and person. She is patient, thoughtful, genuine and inspiring. Her classes are well considered and seamlessly tie storytelling, body awareness, meditation, and exercise together. I have taken yoga classes for over 10 years but did not embrace or understand yoga as part of my daily life until taking classes with her.  I try to take classes with her every chance I get. Her positivity, understanding of movement and love of teaching make her a joy to work with and learn from." -Emily Nachison</p>

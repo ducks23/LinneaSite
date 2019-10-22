@@ -22,7 +22,7 @@ function Schedule(){
   return (
     <Grid container justify = "center">
       <div className={classes.root} id="schedule">
-            <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
+            <Box borderRadius={16} bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
               <h2>Schedule</h2>
               <ScheduleBar0 />
             </Box>

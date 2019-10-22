@@ -22,7 +22,7 @@ function PrivateClasses(){
     return (
       <Grid container justify="center">
           <div id="private" className={classes.root}>
-              <Box bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
+              <Box borderRadius={16} bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
                   <h2>
                     Private Lessons:

@@ -11,6 +11,7 @@ import './App.css';
 import OnlineClasses from './components/OnlineClasses'
 import footer from './components/Footer'
 import Testimonials from './components/Testimonials'
+import ToTop from './components/ToTop'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
@@ -43,14 +44,13 @@ function App() {
     <div className="App">
     <ThemeProvider theme={theme}>
       <NavBar />
+      <ToTop />
       <About />
       <Bio />
       <Schedule />
       <OnlineClasses />
       <Testimonials />
-
       <PrivateClasses />
-
       <Footer />
     </ThemeProvider>
     </div>
