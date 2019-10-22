@@ -32,6 +32,11 @@ function Footer() {
     <Box borderRadius={16} bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
         <h3>Follow me on Instagram! </h3>
 
+        <a href="https://www.instagram.com/linneasolveig/?hl=en" style={{ color: '#000' }} >
+                    <h5>@linneasolveig</h5>
+        </a>
+
+
           <a href="https://www.instagram.com/linneasolveig/?hl=en">
             <img src={Insta}   alt="linneas instagram" height="50px" width="50px"></img>
           </a>

@@ -13,7 +13,7 @@ const OnlineData = [
 {
   id: 2,
   _title: "Yoga 2",
-  _about: "Strong, flexible hamstrings, accessed from every angle, and available to anyone!",
+  _about: "Strong, flexible hamstrings, accessed from every angle. Great class for beginners to advanced",
   _tools: "strap, blanket, 2 blocks",
   _ul: "https://onlineclasses.thebhaktishop.com/courses/yoga-2-3-with-linnea-1",
   pic: 2,

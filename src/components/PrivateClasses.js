@@ -31,6 +31,8 @@ function PrivateClasses(){
                     These classes are both enlightening and enormously fun! Whether you have specific injuries, mysterious discomforts, vague questions, or definitive goals, spending an hour or so, one on one, can help your practice grow and expand.
                     $75 per hour. $15 for each additional student. Maximum 4 students. Buy a package of four classes $280.
                   </p>
+<a href = "mailto: linneasolveigyoga@gmail.com" style={{ color: '#000' }}>Contact: linneasolveigyoga@gmail.com</a>
+
               </Box>
           </div>
       </Grid>
