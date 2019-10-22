@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     flexGrow: 1,
     width: '100%',
     maxWidth: 700,
-    padding: 20,
+    padding: 40,
 
   },
   paper: {
