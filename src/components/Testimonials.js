@@ -41,7 +41,12 @@ const useStyles = makeStyles({
     justify: "center",
     margin: "auto",
     padding: 20
-  }
+  },
+  root1:{
+    padding: 10
+
+
+}
 });
 
 function Testimonials() {
@@ -50,7 +55,13 @@ function Testimonials() {
     <Box borderRadius={16} bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
         <h1>Testimonials</h1>
-        <p>"Linnea is an incredible yoga teacher and person. She is patient, thoughtful, genuine and inspiring. Her classes are well considered and seamlessly tie storytelling, body awareness, meditation, and exercise together. I have taken yoga classes for over 10 years but did not embrace or understand yoga as part of my daily life until taking classes with her.  I try to take classes with her every chance I get. Her positivity, understanding of movement and love of teaching make her a joy to work with and learn from." -Emily Nachison</p>
+        <p className={classes.root1}>Linnea is an incredible yoga teacher and person. She is patient, thoughtful, genuine and inspiring. Her classes are well considered and seamlessly tie storytelling, body awareness, meditation, and exercise together. I have taken yoga classes for over 10 years but did not embrace or understand yoga as part of my daily life until taking classes with her.  I try to take classes with her every chance I get. Her positivity, understanding of movement and love of teaching make her a joy to work with and learn from. -Emily Nachison</p>
+
+       <p className={classes.root1}>Despite taking many classes over the years, a consistent yoga practice eluded me until I took my first class with Linnea. The dedication, intention, and joy that she brings to her classes is the foundation for my daily practice. Linnea brings authenticity, a love of movement, and personal insight to her classes. Although I know she prepares extensively for her classes, they do not feel rote, repetitive, or that boxes are being ticked. It feels as though she is along with us, excited and curious, as we discover the next movement. And that excitement is infectious. -Michael Endo
+      </p>
+      <p className={classes.root1}>
+        Linnea’s love for this practice is contagious, which makes it a delight to attend her classes. Her teaching style is a playfully choreographed dance of traditional and non-traditional postures assisted with a detailed anatomy lesson exploring our felt senses. I truly appreciate any class that prompts me to muse over my body’s cells, organs and/or muscles to better understand my internal systems. Linnea offers a holistic approach to moving, strengthening and perceiving the body that fills me with just the right balance of physical and cerebral education. -Adrian E.
+      </p>
 
     </Box>
   </div>);
