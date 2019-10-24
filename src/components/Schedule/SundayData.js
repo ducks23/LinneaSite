@@ -22,7 +22,7 @@ const SundayData = [
   id: 3,
   location: 'Peoples Yoga 4029 SE Hawthorne',
   time: '7:15-830pm,',
-  type: 'Restorative',
+  type: 'Yin',
   directions: "https://goo.gl/maps/cn1hsrfjxi9P2j8z6",
   pic: 2
   }
