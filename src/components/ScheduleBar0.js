@@ -9,7 +9,6 @@ import SundayData from './Schedule/SundayData'
 import MondayData from './Schedule/MondayData'
 import TuesdayData from './Schedule/TuesdayData'
 import WednesdayData from './Schedule/WednesdayData'
-import ThursdayData from './Schedule/ThursdayData'
 import FridayData from './Schedule/FridayData'
 import ScheduleCard from './ScheduleCard'
 import Grid from '@material-ui/core/Grid';
@@ -24,7 +23,6 @@ const _Sunday = SundayData.map(card => <ScheduleCard id location = {card.locatio
 const _Monday = MondayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 const _Tuesday = TuesdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 const _Wednesday = WednesdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
-const _Thursday = ThursdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 const _Friday = FridayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 
 
@@ -97,8 +95,7 @@ export default function ScrollableTabsButtonAuto() {
           <Tab label="Monday" {...a11yProps(1)} />
           <Tab label="Tuesday" {...a11yProps(2)} />
           <Tab label="Wednesday" {...a11yProps(3)} />
-          <Tab label="Thursday" {...a11yProps(4)} />
-          <Tab label="Friday" {...a11yProps(5)} />
+          <Tab label="Friday" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -123,12 +120,6 @@ export default function ScrollableTabsButtonAuto() {
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <Grid container spacing={0}>
-          {_Thursday }
-        </Grid>
-      </TabPanel>
-
-      <TabPanel value={value} index={5}>
         <Grid container spacing={0}>
           {_Friday }
         </Grid>

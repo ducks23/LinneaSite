@@ -9,7 +9,6 @@ import SundayData from './Schedule/SundayData'
 import MondayData from './Schedule/MondayData'
 import TuesdayData from './Schedule/TuesdayData'
 import WednesdayData from './Schedule/WednesdayData'
-import ThursdayData from './Schedule/ThursdayData'
 import FridayData from './Schedule/FridayData'
 import ScheduleCard from './ScheduleCard'
 import Grid from '@material-ui/core/Grid';
@@ -41,7 +40,6 @@ const _Sunday = SundayData.map(card => <ScheduleCard id location = {card.locatio
 const _Monday = MondayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 const _Tuesday = TuesdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 const _Wednesday = WednesdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
-const _Thursday = ThursdayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 const _Friday = FridayData.map(card => <ScheduleCard id location = {card.location} time = {card.time} type = {card.type} directions={card.directions} pic={card.pic} /> )
 
 
@@ -75,9 +73,7 @@ export default function ScheduleBar() {
         <Tab label="Mon" />
         <Tab label="Tue" />
         <Tab label="Wed" />
-        <Tab label="Thur" />
         <Tab label="Fri" />
-        <Tab label="Sat" />
         </Tabs>
       </AppBar>
       {value === 0 && <TabContainer>
@@ -111,18 +107,11 @@ export default function ScheduleBar() {
       {value === 4 && <TabContainer>
                         <div className={classes.root}>
                           <Grid container spacing={0}>
-                            {_Thursday }
-                          </Grid>
-                        </div>
-                      </TabContainer>}
-      {value === 5 && <TabContainer>
-                        <div className={classes.root}>
-                          <Grid container spacing={0}>
                             {_Friday }
                           </Grid>
                         </div>
                       </TabContainer>}
-      {value === 6 && <TabContainer>No Yoga go have some fun</TabContainer>}
+
     </div>
   );
 }
