@@ -25,7 +25,7 @@ function PrivateClasses(){
               <Box borderRadius={16} bgcolor="primary.main" color="primary.contrastText" p={2} m={1}>
 
                   <h2>
-                    Private Lessons:
+                    Private Lessons
                   </h2>
                   <p>I offer private and semi-private classes.
                     These classes are both enlightening and enormously fun! Whether you have specific injuries, mysterious discomforts, vague questions, or definitive goals, spending an hour or so, one on one, can help your practice grow and expand.
