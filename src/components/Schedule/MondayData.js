@@ -13,7 +13,7 @@ pic: 3
 id: 1,
 location: 'NE Killingsworth TPY Studio',
 time: '6:00-7:15pm',
-type: 'lunch hour vinyasa',
+type: 'Yin',
 directions: 'https://goo.gl/maps/hZG8WNhBuDCV41Ug6',
 pic: 2
 }
