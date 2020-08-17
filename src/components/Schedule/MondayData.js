@@ -12,7 +12,7 @@ pic: 3
 {
 id: 1,
 location: 'NE Killingsworth TPY Studio',
-time: '6:00-7:15pm',
+time: '7:15-8:30pm',
 type: 'Yin',
 directions: 'https://goo.gl/maps/hZG8WNhBuDCV41Ug6',
 pic: 2
